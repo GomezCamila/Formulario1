@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form action=" process.php" method="post">
+        <h1>Regristrarse</h1>
+        <div>
+        <label for ="nombre"> Nombre: </label>
+        <input type="text" id="nombre" name="nombre">
+        </div>
+        <div>
+        <label for=" apellido">Apellido:</label>
+        <input type=" text" id="apellido" name="apellido">
+        </div>
+        <div>
+        <label for="email">Email:</label>
+        <input type="text"  id="email" name="email">
+        </div>
+        <div>
+        <label for="cumpleaños">Cumpleaños:</label>
+        <input type="date" id="cumpleaños" name="cumpleaños">
+        </div>
+        
+        <p> Selecciona tu género: </p>
+
+        <label for="masculino">Masculino:</label>
+        <input type="radio"  id="masculino" name="genero" value="masculino">
+        <label for="femenino">Femenino:</label>
+        <input type="radio" id="femenino" name="genero" value="femenino">
+        <label for="no-binario">No binario:</label>
+        <input type="radio" id="no-binario" name="genero" value="no-binario">
+        <label for="prefiero-no-decir" >Prefiero  no decir:</label>
+        <input type="radio" id="prefiero-no-decir"   name="genero" value="prefiero-no-decir">
+
+        <p>Selecciona tu animal favorito: </p>
+        <label for="gato">Gato</label>
+        <input type="checkbox" id="gato" name="animal" value="gato">
+        <label for="perro">Perro</label>
+        <input type="checkbox" id="perro" name="animal" value=" perro">
+        <label for="pato">Pato</label>
+        <input type="checkbox" id="pato" name="animal"  value="pato">
+        <label for="conejo">Conejo</label>
+        <input type="checkbox" id="conejo" name="animal" value="conejo">
+
+        <div>
+            <p>Escribe unas palabras sobre ti</p>
+            <textarea name="description"></textarea>
+            <label for="password">Contraseña:</label>
+            <input type="password" id="password" name="password">
+            <label for="pw-confirm"> Confirmacion de Contraseña:</label>
+            <input type="password" id="pw-password" name="password_confirmacion">
+
+            <input type="submit" value= "enviar" >
+
+            </div>
+
+    </form>
+</body>
+</html>
+
